@@ -63,6 +63,7 @@ app.use('/sendemail', function (req, res) {
               console.log("ERROR!!!!!!", error);
             } else {
               console.log('Email sent: ' + info.response);
+              res.json({ status: "OK" });
             }})
     } catch (error) {
         res.json({message: error.message})

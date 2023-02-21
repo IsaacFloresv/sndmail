@@ -1,8 +1,10 @@
 import express, {Router} from "express"
 import cors from 'cors'
 import nodemailer from "nodemailer"
+import { APP_PORT } from "p_config.js"
 
 var app = express();
+const PORT = APP_PORT
 
 app.use(cors())
 app.use(express.json())
@@ -67,6 +69,6 @@ app.use('/sendemail', function (req, res) {
     }
 })
 
-app.listen("3050", ()=> {
-    console.log("Server on port http://127.0.0.1:3050")
+app.listen(PORT, ()=> {
+    console.log("Server on port http://127.0.0.1: "+ PORT)
 })

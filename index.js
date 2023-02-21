@@ -16,12 +16,12 @@ app.use('/sendemail', function (req, res) {
         const {tdia,ndia,nomba,apell1a,apell2a,email,tel,provi,canto,distr,nombc,apell1c,apell2c,tdic,ndic,fchahech,fchagar,desch} = req.body
         const cco = ["gestion.meic@grupoalegacr.com", "sistemadenuncias_2@meic.go.cr"]
         const trasnporte = nodemailer.createTransport({
-            host: "smtp.gmail.com",
+            host: "mail.grupoalegacr.com",
             port: 465,
             secure: true,            
             auth: {
-                user: "isaacfloresv@gmail.com",
-                pass: "hirazcuzpozfmihr"
+                user: "formulario.meic@grupoalegacr.com",
+                pass: "E6LQWW8GL641"
             }
          })
 
@@ -52,7 +52,7 @@ app.use('/sendemail', function (req, res) {
 
          console.log(gcorreo)
          const info = trasnporte.sendMail({
-            from: "'Pruebas M' <isaacfloresv@gmail.com>",
+            from: "'Formulario WEB Solicitud de Asesoria' <formulario.meic@grupoalegacr.com>",
             to: `${nomba} ${apell1a} <${email}>`,
             cc: cco,
             subject: "Prueba de M",

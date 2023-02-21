@@ -14,7 +14,7 @@ app.use('/sendemail', function (req, res) {
     try {
         console.log(req.body)
         const {tdia,ndia,nomba,apell1a,apell2a,email,tel,provi,canto,distr,nombc,apell1c,apell2c,tdic,ndic,fchahech,fchagar,desch} = req.body
-        const cco = ["gestion.meic@grupoalegacr.com", "trasladoslinea800@MediaCapabilities.cr"]
+        const cco = ["gestion.meic@grupoalegacr.com", "sistemadenuncias_2@meic.go.cr"]
         const trasnporte = nodemailer.createTransport({
             host: "smtp.gmail.com",
             port: 465,
@@ -70,5 +70,5 @@ app.use('/sendemail', function (req, res) {
 })
 
 app.listen(PORT, ()=> {
-    console.log("Server on port http://127.0.0.1: "+ PORT)
+    console.log(`Server UP run in http://127.0.0.1:${PORT}/`)
 })

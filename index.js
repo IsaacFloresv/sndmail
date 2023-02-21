@@ -1,7 +1,7 @@
 import express, {Router} from "express"
 import cors from 'cors'
 import nodemailer from "nodemailer"
-import { APP_PORT } from "p_config.js"
+import { APP_PORT } from "./d_config.js"
 
 var app = express();
 const PORT = APP_PORT

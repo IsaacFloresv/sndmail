@@ -28,7 +28,7 @@ app.use('/sendemail', function (req, res) {
         const gcorreo = `_______________________________________________________
         <h2>Estimado Usuario</h2>
         <p>La siguiente es la informacion que nos acaba de enviar:</p>
-        <h4>Datos del Afectado:</h4>
+        <h4>Datos del Usuario:</h4>
         <ul>
         <li>Tipo de identificacion: ${tdia}</li>
         <li>Numero de identificaion: ${ndia}</li>

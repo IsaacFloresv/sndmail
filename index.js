@@ -26,7 +26,7 @@ app.use('/sendemail', function (req, res) {
          })
 
         const gcorreo = `_______________________________________________________
-        <h2>Estimado Afectado</h2>
+        <h2>Estimado Usuario</h2>
         <p>La siguiente es la informacion que nos acaba de enviar:</p>
         <h4>Datos del Afectado:</h4>
         <ul>
@@ -55,7 +55,7 @@ app.use('/sendemail', function (req, res) {
             from: "'Formulario WEB Solicitud de Asesoria' <formulario.meic@grupoalegacr.com>",
             to: `${nomba} ${apell1a} <${email}>`,
             cc: cco,
-            subject: "Prueba de M",
+            subject: "Atención a Solicitud de Asesoria",
             html: gcorreo
          }, function (error, info) {
             console.log("senMail returned!");

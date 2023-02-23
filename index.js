@@ -35,7 +35,9 @@ app.use('/sendemail', function (req, res) {
         <li>Nombre completo:  ${nomba} ${apell1a} ${apell2a}</li>
         <li>Correo: ${email} Telefono: ${tel}</li>
         <li> Ubicacion Geografica</li>
-        <li>Provincia: ${provi} Canton: ${canto} Distrito: ${distr}</li>
+        <li>Provincia: ${provi}</li>
+        <li>Canton: ${canto}</li>
+        <li>Distrito: ${distr}</li>
         </ul>
         _________________________________________________
         
@@ -45,7 +47,8 @@ app.use('/sendemail', function (req, res) {
         <li>Numero de identificaion: ${ndic}</li>
         __________________________________________________
         <h4>Datos del Evento:</h4>
-        <li>Fecha del suceso: ${fchahech} Garantia: ${fchagar}</li>
+        <li>Fecha del suceso: ${fchahech}</li>
+        <li> Garantia: ${fchagar}</li>
         <li>Descripción de lo sucedido:</li>
         <p>${desch}</p>
         ___________________________________________________`;

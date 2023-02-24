@@ -33,15 +33,17 @@ app.use('/sendemail', function (req, res) {
         <li>Tipo de identificacion: ${tdia}</li>
         <li>Numero de identificaion: ${ndia}</li>
         <li>Nombre completo:  ${nomba} ${apell1a} ${apell2a}</li>
-        <li>Correo: ${email} Telefono: ${tel}</li>
-        <li> Ubicacion Geografica</li>
+        <li>Correo: ${email}</li> 
+        <li>Telefono: ${tel}</li>
+        _________________________________________________
+        <h4> Ubicacion Geografica:</h4>
         <li>Provincia: ${provi}</li>
         <li>Canton: ${canto}</li>
         <li>Distrito: ${distr}</li>
         </ul>
         _________________________________________________
         
-        <h4>Datos del Comerciante</h4>
+        <h4>Datos del Comerciante:</h4>
         <li>Nombre: ${nombc} ${apell1c} ${apell2c}</li>
         <li>Tipo de identificacion: ${tdic}</li>
         <li>Numero de identificaion: ${ndic}</li>

@@ -53,6 +53,12 @@ app.use('/sendemail', function (req, res) {
         <li> Garantia: ${fchagar}</li>
         <li>Descripción de lo sucedido:</li>
         <p>${desch}</p>
+        
+        <h4>Nota importante:</h4>
+        <h5>Respuesta:</h5>
+        <p>24 horas hábiles un funcionario capacitado revisará los hechos
+        expuestos y le brindará la Asesoria de acuerdo con la ley y las competencias
+        de la Comisión Nacional del Consumidor</p>      
         ___________________________________________________`;
 
          console.log(gcorreo)

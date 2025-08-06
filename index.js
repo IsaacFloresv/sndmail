@@ -31,7 +31,7 @@ app.use('/sendemail', function (req, res) {
         <h4>Datos del Consumidor:</h4>
         <ul>
         <li>Tipo de identificacion: ${tdia}</li>
-        <li>Numero de identificaion: ${ndia}</li>
+        <li>Numero de identificacion: ${ndia}</li>
         <li>Nombre completo:  ${nomba} ${apell1a} ${apell2a}</li>
         <li>Correo: ${email}</li> 
         <li>Telefono: ${tel}</li>
@@ -46,11 +46,11 @@ app.use('/sendemail', function (req, res) {
         <h4>Datos del Comerciante:</h4>
         <li>Nombre: ${nombc} ${apell1c} ${apell2c}</li>
         <li>Tipo de identificacion: ${tdic}</li>
-        <li>Numero de identificaion: ${ndic}</li>
+        <li>Numero de identificacion: ${ndic}</li>
         __________________________________________________
         <h4>Datos del Evento:</h4>
         <li>Fecha del suceso: ${fchahech}</li>
-        <li> Garantia: ${fchagar}</li>
+        <li>Garantia: ${fchagar}</li>
         <li>Descripción de lo sucedido:</li>
         <p>${desch}</p>
         
